@@ -2,13 +2,43 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.ash-1{
+    width: 100%;
+    max-width: 100%;
+    min-height: 55px;
+    background: #2fa188;
+    border-radius: 5px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
+
+.ash-1 img{
+    width: 24px;
+    height: 24px;
+}
+.register{
+    width: 48%;
+     min-height: 55px;
+     font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(27, 27, 27);
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    
+}
+
 
 .main{
     width:100%;
@@ -23,9 +53,16 @@
 
 /* Header */
 .contain{
-    background:#D9777F !important;
+    background:#D9777F;
     min-height:70px;
 }
+/* @media only screen and (max-width: 1024px) {
+  .navbar {
+    background-color: #ffffff;
+  }
+} */
+
+
 
 
 .contain .content{
@@ -52,7 +89,7 @@
 
 /* Images */
 .img1{
-    width:140px;
+    width:120px;
 }
 
 .main-inp{
@@ -88,6 +125,21 @@
     height:24px;
     border-radius:50%;
     border:1px solid #D9777F;
+}
+.plus-1{
+        background-image: url(data:image/png;base64,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);
+background-position-x: -55px;
+    background-position-y: -58px;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+        display: inline-block;
+    width: 26px;
+    height: 24px;
+    margin-top: 5px;
 }
 li{
     color: #D9777F;
@@ -146,10 +198,10 @@ li:hover{
 .nests:hover{
     color: black;   
     cursor: pointer;
-}
-.ban{
+ }
+ .ban{
     height: 100%;
-}
+} 
 .baner{
     background-image: url("./images/baner-bg.svg");
     width: 100%;
@@ -178,9 +230,29 @@ li:hover{
     transform: translateY(-50%);
 }
 .child-ban{
-    width:85%;
+    width:100%;
     max-width:1400px;
     margin:0 auto;
+}
+@media (max-width:991px){
+    .baner{
+    background-image: url("./images/baner-bg.svg");
+    width: 100%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+}
+@media(max-width:401px){
+    .baner{
+    background-image: url("./images/baner-bg.svg");
+    width: 100%;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 }
 .bord{
     width: 100%;
@@ -229,6 +301,25 @@ background-color: #e791ab;
     margin: auto;
     display: block;
 }
+/* .types-1 img{
+    width: 100%;
+    max-width: 100px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+.dog-1{
+     width: 150;
+    background: #fff;
+    border-radius: 15px;
+    padding-top: 10px;
+    border: 1px solid black;
+    transition: .3s;
+    cursor: pointer;
+    height: 100%;
+} */
 
 .types p{
     margin-top: 12px;
@@ -675,11 +766,7 @@ line-height: 1.4
     background-repeat: no-repeat;
     background-position: right bottom;
 
-    /* Image sirf right side me rahegi */
-    /* background-size: 70% auto;
-
-    pointer-events: none;
-    z-index: 0; */
+    
 }
 
 /* Content image ke upar rahe */
@@ -708,31 +795,54 @@ line-height: 1.4
 
 }
 
+.animal-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+.dog-1{
+    /* width: 120px; */
+    background: #fff;
+    border-radius: 15px;
+    padding-top: 10px;
+    border: 1px solid black;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+.ash{
+    /* height: 40px; */
+    width: 80px;
+    
+}
+.birds{
+    font-size: 14px;
+}
+.types-1{
+    width: 100%;
+}
+
+/* .types-1 img{
+    width: 100%;
+    max-width: 80px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 576px){
+
+    .dog-1{
+        width: calc((100% - 45px) / 4);
+    }
+
+} */
 /* Menu */
-.menu{
-    display: none;
-    margin-top: 15px;
-    background: #241919;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 40px;
-}
 
-.menu a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 0;
-}
-
-.menu a:hover{
-    color: yellow;
-}
-
-/* Toggle Open */
-#menu-toggle:checked ~ .menu{
-    display: block;
-}
 
 /* Tablet */
 @media (max-width:992px){
@@ -768,47 +878,6 @@ line-height: 1.4
 
 
 
-/* .navbar-collapse{
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.main-inp{
-    width:100%;
-}
-
-.inp{
-    width:100%;
-}
-
-.navbar-nav{
-    gap:15px;
-} */
-
-/* @media (max-width:991px){
-
-    .navbar-collapse{
-        display:block;
-    }
-
-    .navbar-nav{
-        margin-top:15px;
-        gap:10px;
-    }
-
-    .nav-item{
-        width:100%;
-    }
-
-    .main-inp{
-        margin-bottom:15px;
-    }
-
-    .but{
-        width:100%;
-    }
-} */
 
 @media (max-width:991px){
 
@@ -818,19 +887,20 @@ line-height: 1.4
     }
 
     .navbar-collapse{
-        background: #D9777F;
+        background: white;
         border-radius: 12px;
         margin-top: 15px;
         padding: 20px;
+        
     }
 
-    .navbar-nav{
+    /* .navbar-nav{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
         width: 100%;
-    }
+    } */
 
     .nav-item{
         width: 100%;
@@ -1020,3 +1090,222 @@ line-height: 1.4
         display: none;
     }
 }
+
+/* --- Desktop vs Mobile Layout Fixes --- */
+
+/* Mobile Logo Styling */
+@media (max-width: 991px) {
+  .logo-img {
+    height: 42px; /* Image layout height */
+    width: auto;
+  }
+  /* .navbar {
+    background-color: #d16b73 !important; /* Image exact pink shade */
+  } */
+  /* .mobile-top-search {
+    background-color: #d16b73;
+  } */
+}
+
+
+
+
+
+/* Mobile top search input box */
+.mobile-top-search .form-control {
+  border-radius: 4px 0 0 4px !important;
+  font-size: 14px;
+}
+
+.btn-search-pink {
+  background-color: #be5a62;
+  border: none;
+  border-radius: 0 4px 4px 0 !important;
+  padding: 5px 14px;
+}
+
+/* Quick Action Tabs below header */
+.btn-mobile-tab{
+    border: 1px solid #e7e0e0 !important;
+    border-radius: 5px;
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 10px;
+    background: #fff;
+    text-decoration: none;
+    /* transition: all 0.9s ease; */
+}
+
+.btn-mobile-tab:hover{
+    background-color: #f7ccd9b9;
+    transform: translateX(2px);
+}
+.plus-pink {
+  color: #d16b73;
+  font-weight: bold;
+}
+
+/* Typography matching image_d228b6.png */
+.welcome-txt {
+  font-size: 14px;
+  color: #555;
+}
+/* .main-handwritten-title {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Playful look 
+  font-weight: 900;
+  font-size: 26px;
+  color: #2c2c2c;
+  line-height: 1.2;
+} */
+.pink-highlight {
+  color: #d16b73;
+}
+
+/* Card Search Box styling */
+.search-box-mobile-style {
+  border: 1px solid #f3d4d6;
+  border-radius: 8px;
+  width: 100%;
+
+}
+.custom-inner-input {
+  border: 1px solid #d16b73 !important;
+  border-radius: 6px !important;
+  padding: 10px 12px;
+  font-size: 14px;
+  width: 85%;
+}
+.inner-search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Buttons */
+.btn-zoek-submit {
+  background-color: #d16b73;
+  border-radius: 6px;
+  border: none;
+}
+.btn-green-adv {
+  background-color: #2ba387 !important; /* Green shade from your design */
+  border-radius: 6px;
+  border: none;
+}
+@media(max-width:991px){
+    .btn-zoek-submit {
+  background-color: #d16b73 !important;
+  border-radius: 6px;
+  border: none;
+  
+}
+}
+
+
+
+
+/* Large screen configuration handling */
+@media (min-width: 992px) {
+  /* Hides mobile layout blocks on large screens */
+  .mobile-tabs, .search-box-mobile-style, .btn-green-adv, .mobile-top-search {
+    display: none !important;
+  }
+  
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+  /* Parent container jo header ke sath match karega */
+  .mobile-top-search {
+    height: 50px;
+   border: 1px solid #D9777F;
+   /* padding: 5px; */
+    /* background-color: #d16b73; */
+  }
+  .search-btn{
+    background-color: #D9777F;
+    color: white;
+    height: 40px;
+    width: 120px;
+    font-weight: 600;
+}
+
+  /* Input group box layout wrapper */
+  .mobile-top-search .input-group {
+    border-radius: 4px;
+    overflow: hidden; /* Corners ko background ke sath smooth round rakhne ke liye */
+    box-shadow: none;
+  }
+
+  /* White text field input box */
+  .mobile-top-search .form-control {
+    background-color: #ffffff !important;
+    color: #333333;
+    border: none !important;
+    font-size: 14px;
+    height: 42px; /* Standard comfortable mobile height */
+  }
+
+  /* Placeholder text color control */
+  .mobile-top-search .form-control::placeholder {
+    color: #999999;
+    font-size: 14px;
+  }
+
+  /* Focus state outline hatane ke liye */
+  .mobile-top-search .form-control:focus {
+    box-shadow: none;
+    background-color: #ffffff;
+  }
+
+  /* Right-side search icon button background */
+  .btn-search-pink {
+      background-color: #bd5961!important; 
+    border: none !important;
+    /* padding: 0 16px; */
+    width: 50px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-search-pink:active {
+    background-color: #a84e55 !important;
+  }
+
+  /* Image icon sizing centering */
+  .btn-search-pink img {
+    display: block;
+    filter: brightness(0) invert(1); /* Agar icon black hai toh use white karne ke liye */
+  }
+}
+
+
+
+
+/* --- Desktop Layout Spacing --- */
+@media (min-width: 992px) {
+  /* Logo ki image ko desktop par balanced width dete hain */
+  .logo-img {
+    max-width: 160px; 
+    height: auto;
+    display: block;
+  }
+  
+  /* Logo aur search input ke beech explicit gap fix karne ke liye */
+  .navbar-brand {
+    margin-right: 4rem !important; /* Isko aap 5rem ya 6rem bhi kar sakte hain agar aur gap chahiye */
+  }
+}
+
+
+
+
