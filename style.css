@@ -20,6 +20,14 @@
     cursor: pointer;
 }
 
+@media (max-width:991px){
+    .custom-mobile-menu{
+        width:100%;
+        background: white !important;
+        padding-bottom:20px;
+    }
+}
+
 .ash-1 img{
     width: 24px;
     height: 24px;
@@ -886,11 +894,18 @@ line-height: 1.4
         z-index: 1000;
     }
 
-    .navbar-collapse{
-        background: white;
+    .navbar-collapse,
+    .custom-mobile-menu{
+        position: relative;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white !important;
         border-radius: 12px;
         margin-top: 15px;
         padding: 20px;
+        width: 100% !important;
+        max-width: 100% !important;
         
     }
 
